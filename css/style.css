@@ -14,7 +14,96 @@
     --color-redcolor: #ca1717;
   }
 
+  body{
+    color: var(--color-light);
+  }
+
+.debug{
+    border: 1px solid red;
+}
+
+.d-flex{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 .container{
     height: 100vh;
     background-color: var(--color-black);
+    flex-direction: column;
+}
+
+.container-small{
+    background-color: var(--color-dark);
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+#sidebar{
+    flex: 0 0 230px;
+    background-color: var(--color-black);
+}
+
+main{
+    flex: 1 1 auto;
+    overflow-y: auto;
+    background-color: var(--color-dark);
+}
+
+.app-content ul{
+    justify-content: center
+}
+
+.app-content ul li{
+    color: var(--color-lightgrey);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.header{
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h2{
+    padding: 0 20px;
+}
+
+.cards{
+    width: calc((100% / 6) - 30px);
+    margin: 10px 20px;
+    flex-direction: column;
+}
+
+.image{
+    width: 100%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.text{
+    text-align: center;
+}
+
+h5{
+    color: var(--color-lightgrey);
+}
+
+footer{
+    background-color: var(--color-darkgrey);
+    flex: 0 0 100px;
 }
