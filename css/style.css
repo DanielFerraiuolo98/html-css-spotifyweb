@@ -103,6 +103,10 @@ h5{
     color: var(--color-lightgrey);
 }
 
+.snd-section h2, h5{
+    padding: 10px 20px;
+}
+
 footer{
     background-color: var(--color-darkgrey);
     flex: 0 0 100px;
