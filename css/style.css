@@ -16,7 +16,11 @@
 
   body{
     color: var(--color-light);
-  }
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 
 .debug{
     border: 1px solid red;
@@ -32,6 +36,13 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+hr{
+    width: 50px;
+    color: var(--color-highlight);
+    margin-left: 50px;
+    margin-top: -20px;
 }
 
 .container{
@@ -89,6 +100,37 @@ h2{
 
 .image{
     width: 100%;
+    position: relative;
+}
+
+.image:hover{
+    cursor: pointer;
+}
+
+.image .layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.layover:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.fa-circle-play{
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    transform:translate(-50%, -50%);
+}
+
+.fa-circle-play:hover{
+    color: var(--color-light);
 }
 
 .image img{
@@ -105,6 +147,19 @@ h5{
 
 .snd-section h2, h5{
     padding: 10px 20px;
+}
+
+.circle-cards{
+    width: calc((100% / 6) - 30px);
+    height: calc(100vw / 6);
+    margin: 10px 20px;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+.circle-image img{
+    width: 100%;
+    border-radius: 50%;
 }
 
 footer{
