@@ -84,6 +84,24 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.header a{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.header button{
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+}
+
 h2{
     padding: 20px 20px 0;
 }
