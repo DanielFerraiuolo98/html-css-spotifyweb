@@ -14,10 +14,6 @@
     --color-redcolor: #ca1717;
   }
 
-  .debug{
-    border: 1px solid red;
-  }
-
   body{
     color: var(--color-light);
     font-family: "Montserrat", sans-serif;
@@ -157,7 +153,6 @@ hr{
 .profile img{
     width: 25px;
     margin-left: 10px;
-    align-items: center;
     margin-right: 10px;
     background-color: var(--color-lightgrey);
     border-radius: 50%;
@@ -332,6 +327,110 @@ footer{
     flex: 0 0 100px;
     position: relative;
     z-index: 5000;
+}
+
+.left{
+    flex-grow: 1;
+    align-items: center;
+}
+
+.footer-image{
+    width: 200px;
+    margin: 10px;
+}
+
+.footer-image img{
+    width: 25%;
+}
+
+h6{
+    font-size: 15px;
+}
+
+.brano-nome{
+    padding: 10px;
+}
+
+.fa-heart{
+    color: var(--color-lightgrey);
+    padding: 10px;
+}
+
+.fa-heart:hover{
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+.fa-folder{
+    color: var(--color-lightgrey);
+    padding: 10px;
+}
+
+.fa-folder:hover{
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+.middle{
+    flex-grow: 2;
+}
+
+.icons{
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icons i{
+    padding: 15px;
+}
+
+.fa-backward-step{
+    margin-right: 50px;
+}
+
+.icons .fa-circle-play{
+    display: block;
+    font-size: 30px;
+    color: var(--color-light);
+    position: absolute;
+    top: 25px;
+    left: 50%;
+}
+
+.range{
+    justify-content: space-around;
+}
+
+.range input{
+    transform: scale(1, 1);
+}
+
+.range input:hover{
+    accent-color: var(--color-highlight);
+    cursor: pointer;
+}
+
+.right{
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.right i{
+    padding: 10px;
+    color: var(--color-lightgrey);
+}
+
+.right i:hover{
+    cursor: pointer;
+    color: var(--color-light);
+}
+
+.right input:hover{
+    accent-color: var(--color-highlight);
+    cursor: pointer;
 }
 
 /*media query*/
