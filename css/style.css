@@ -38,6 +38,7 @@ a{
     height: 100vh;
     background-color: var(--color-black);
     flex-direction: column;
+    overflow: hidden;
 }
 
 .container-small{
@@ -65,12 +66,16 @@ a{
     margin: 10px 20px 5px;
 }
 
+.logo-small{
+    display: none;
+}
+
 .sidebar-top ul li img{
     width: 25px;
     margin: 5px 20px 10px 10px;
 }
 
-.sidebar-top ul li{
+.sidebar-top ul a{
     display: flex;
     align-items: center;
     color: var(--color-lightgrey);
@@ -434,7 +439,8 @@ h6{
 }
 
 /*media query*/
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1100px) {
     .app-content ul{
         flex-wrap: wrap;
     }
@@ -445,20 +451,100 @@ h6{
 
     .cards{
         width: calc(100% / 4);
+        margin: 0;
     }
 
     .circle-cards{
         width: calc(100% / 4);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .cards{
+        width: calc(100% / 3);
+        margin: 0;
+    }
+
+    .circle-cards{
+        width: calc(100% / 3);
+    }
+
+    .left{
+        flex-direction: column;
+    }
+
+    .right{
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 576px) {
     .cards{
         width: calc(100% / 2);
+        margin: 0;
     }
 
     .circle-cards{
         width: calc(100% / 2);
+        margin: 0;
     }
 }
 
+@media screen and (max-width: 480px) {
+    .cards{
+        width: calc(100% / 1);
+        margin: 0;
+    }
+
+    .circle-cards{
+        width: calc(100% / 1);
+        margin: 0;
+    }
+
+    #sidebar{
+        max-width: 50px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+        width: 25px;
+        margin: 15px 20px 10px 10px;
+    }
+
+    .sidebar-top ul span{
+        display: none;
+    }
+
+    .sidebar-top ul li img{
+        display: block;
+    }
+
+    h3{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .nome-playlist{
+        display: none;
+    }
+
+    .sidebar-bottom{
+        display: none;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+}
