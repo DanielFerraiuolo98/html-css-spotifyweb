@@ -13,15 +13,54 @@
 <body>
     <div class="container d-flex">
         <div class="container-small d-flex debug">
-            <div id="sidebar" class="debug"></div>
+            <div id="sidebar" class="debug">
+                <div class="sidebar-top debug">
+                    <div>
+                        <img class="logo" src="spotify/img/logo.svg" alt="logo Spotify">
+                    </div>
+                    <div>
+                        <ul>
+                            <a href="#"><li class="border-left"><img src="spotify/img/home.svg" alt="home">Home</li></a>
+                            <a href="#"><li><img src="spotify/img/search.svg" alt="search">Cerca</li></a>
+                            <a href="#"><li><img src="spotify/img/libreria.svg" alt="library">La tua libreria</li></a>
+                        </ul>
+                    </div>
+                    <h3>Playlist</h3>
+                    <div class="d-flex playlist">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span>Crea Playlist</span>
+                    </div>
+                    <div class="nome-playlist">
+                        <ul>
+                            <a href="#"><li>Nome Playlist</li></a>
+                            <a href="#"><li>Nome Playlist</li></a>
+                            <a href="#"><li>Nome Playlist</li></a>
+                            <a href="#"><li>Nome Playlist</li></a>
+                            <a href="#"><li>Nome Playlist</li></a>
+                            <a href="#"><li>Nome Playlist</li></a>
+                            <a href="#"><li>Nome Playlist</li></a>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="sidebar-bottom debug">
+                    <div class="download d-flex">
+                        <img src="spotify/img/download.svg" alt="download">
+                        <span>installa app</span>
+                    </div>
+                    <hr>
+                    <div class="profile d-flex">
+                        <img src="spotify/img/profile.svg" alt="profile">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </div>
             <main>
                 <div class="header">
                     <a href="#"><button>Effettua l'upgrade</button></a>
                 </div>
                 <div class="app-content">
                     <ul class="d-flex">
-                        <a href="#"><li>In evidenza</li>
-                        <hr></a>
+                        <a href="#"><li class="active">In evidenza</li></a>
                         <a href="#"><li>Podcast</li></a>
                         <a href="#"><li>Classifiche</li></a>
                         <a href="#"><li>Generi e Mood</li></a>
@@ -149,6 +188,9 @@
                             <div class="circle-cards d-flex">
                                 <div class="circle-image">
                                     <img src="spotify/img/youg.jpeg" alt="youg">
+                                    <div class="circle-layover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div> 
                                 </div>
                                 <div class="text debug">
                                     <h4>Lana del Rey</h4>
@@ -158,6 +200,9 @@
                             <div class="circle-cards d-flex">
                                 <div class="circle-image">
                                     <img src="spotify/img/einaudi.jpeg" alt="einaudi">
+                                    <div class="circle-layover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div> 
                                 </div>
                                 <div class="text debug">
                                     <h4>Ludovico Einaudi</h4>
