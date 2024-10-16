@@ -476,6 +476,7 @@ h6{
 
     .right{
         flex-direction: column;
+        transform: scale(0.7);
     }
 }
 
@@ -488,6 +489,19 @@ h6{
     .circle-cards{
         width: calc(100% / 2);
         margin: 0;
+    }
+
+    .left i{
+        display: none;
+    }
+
+    .right i{
+        display: none;
+    }
+
+    .right input{
+        transform: rotate(270deg);
+        margin-bottom: 50px;
     }
 }
 
