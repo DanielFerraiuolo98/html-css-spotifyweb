@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-redcolor: #ca1717;
+  }
+
+  body{
+    color: var(--color-light);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.container{
+    height: 100vh;
+    background-color: var(--color-black);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header{
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-black);
+}
+
+.container-small{
+    background-color: var(--color-dark);
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+#sidebar{
+    flex: 0 0 230px;
+    background-color: var(--color-black);
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.sidebar-top{
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-top ul{
+    display: flex;
+    align-items: center;
+}
+
+.library{
+    width: 25px;
+    margin: 60px 20px 10px;
+}
+
+.library span{
+    padding-left: 10px;
+    color: var(--color-lightgrey);
+}
+
+.library span:hover{
+    cursor: pointer;
+    color: var(--color-light);
+}
+
+.playlist{
+    background-color: var(--color-darkgrey);
+    padding: 10px;
+    min-height: 0px;
+}
+
+.playlist li{
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.podcast{
+    background-color: var(--color-darkgrey);
+    padding: 10px;
+    margin-top: 50px;
+    flex: 1 1 auto;
+    min-height: 0px;
+}
+
+.podcast ul{
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.podcast li{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.sidebar-bottom{
+    height: 90px;
+    z-index: 1000;
+    background-color: var(--color-darkgrey);
+    position: relative;
+}
+
+.sidebar-bottom ul a:hover{
+    color: var(--color-light);
+}
+
+ul{
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+li{
+    padding-right: 10px;
+}
+
+.logo-small{
+    display: block;
+    width: 25px;
+    margin: 10px 20px;
+}
+
+.home{
+    width: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-lightgrey);
+    font-size: 12px;
+}
+
+.buttons span{
+    color: var(--color-lightgrey);
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.buttons span:hover{
+    color: var(--color-light);
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+}
+
+main{
+    flex: 1 1 auto;
+    overflow-y: auto;
+    background-color: var(--color-dark);
+}
+
+h2{
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.cards{
+    width: calc(100% / 6);
+    margin: 10px 20px;
+}
+
+
+.image{
+    width: 100%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--color-darkgrey);
+    flex: 0 0 100px;
+    position: relative;
+    z-index: 5000;
+    justify-content: center;
+}
+
+footer ul a li:first-child{
+    color: var(--color-light);
+    font-size: 15px;
+}
+
+footer ul a li{
+    padding: 0 40px;
+}
+
+footer ul a li:hover{
+    color: var(--color-light);
+}
+
+.icons{
+    color: var(--color-light);
+    font-size: 20px;
+    padding-left: 200px;
+}
+
+.icons i{
+    padding: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    .container-cards{
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        width: calc(100% / 4);
+        margin: 20px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .cards{
+        width: calc(100% / 3);
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cards{
+        width: calc(100% / 2);
+        margin: 20px 0;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .podcast{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cards{
+        width: calc(100% / 1);
+        margin: 20px 0;
+    }
+
+    #sidebar{
+        max-width: 50px;
+    }
+
+    .library span{
+        display: none;
+    }
+
+    .sidebar-bottom{
+        display: none;
+    }
+}
+
+
+

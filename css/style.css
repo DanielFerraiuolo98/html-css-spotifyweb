@@ -14,7 +14,7 @@
     --color-redcolor: #ca1717;
   }
 
-  body{
+body{
     color: var(--color-light);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
