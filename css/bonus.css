@@ -1,3 +1,4 @@
+/*generals*/
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@
     --color-redcolor: #ca1717;
   }
 
-  body{
+body{
     color: var(--color-light);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -26,6 +27,7 @@
     display: flex;
 }
 
+/*container*/
 .container{
     height: 100vh;
     background-color: var(--color-black);
@@ -48,6 +50,7 @@ header{
     min-height: 0;
 }
 
+/*sidebar*/
 #sidebar{
     flex: 0 0 230px;
     background-color: var(--color-black);
@@ -130,6 +133,7 @@ li{
     padding-right: 10px;
 }
 
+/*header*/
 .logo-small{
     display: block;
     width: 25px;
@@ -167,6 +171,7 @@ button:hover{
     transition: 1s;
 }
 
+/*main*/
 main{
     flex: 1 1 auto;
     overflow-y: auto;
@@ -197,6 +202,7 @@ h2{
     text-align: center;
 }
 
+/*footer*/
 footer{
     background-color: var(--color-darkgrey);
     flex: 0 0 100px;
@@ -228,6 +234,7 @@ footer ul a li:hover{
     padding: 10px;
 }
 
+/*media query*/
 @media screen and (max-width: 1100px) {
     .container-cards{
         flex-wrap: wrap;

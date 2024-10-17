@@ -1,3 +1,4 @@
+/*generaals*/
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +35,7 @@ a{
     text-decoration: none;
 }
 
+/*container*/
 .container{
     height: 100vh;
     background-color: var(--color-black);
@@ -48,6 +50,7 @@ a{
     min-height: 0;
 }
 
+/*sidebar*/
 #sidebar{
     flex: 0 0 230px;
     background-color: var(--color-black);
@@ -167,6 +170,7 @@ hr{
     color: var(--color-light);
 }
 
+/*main*/
 main{
     flex: 1 1 auto;
     overflow-y: auto;
@@ -244,6 +248,7 @@ h2{
     padding: 20px 20px 0;
 }
 
+/*cards*/
 .cards{
     width: calc(100% / 6);
     margin: 10px 20px;
@@ -305,6 +310,7 @@ h5{
     padding: 10px 20px;
 }
 
+/*card circolari*/
 .circle-cards{
     width: calc(100% / 6);
     margin: 10px 20px;
@@ -343,6 +349,7 @@ h5{
     transition: opacity 0.5s;
 }
 
+/*footer*/
 footer{
     background-color: var(--color-darkgrey);
     flex: 0 0 100px;
